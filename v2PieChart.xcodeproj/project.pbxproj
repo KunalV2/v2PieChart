@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30391D72007436B00C38BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391CF2007436B00C38BDF /* AppDelegate.swift */; };
+		C30391D82007436B00C38BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30391D02007436B00C38BDF /* Assets.xcassets */; };
+		C30391D92007436B00C38BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30391D12007436B00C38BDF /* LaunchScreen.storyboard */; };
+		C30391DA2007436B00C38BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30391D32007436B00C38BDF /* Main.storyboard */; };
+		C30391DB2007436B00C38BDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C30391D52007436B00C38BDF /* Info.plist */; };
+		C30391DC2007436B00C38BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391D62007436B00C38BDF /* ViewController.swift */; };
+		C30392022007439100C38BDF /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E02007439100C38BDF /* PieChart.swift */; };
+		C30392032007439100C38BDF /* PieChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E12007439100C38BDF /* PieChartDelegate.swift */; };
+		C30392042007439100C38BDF /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E32007439100C38BDF /* PieSlice.swift */; };
+		C30392052007439100C38BDF /* PieSliceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E42007439100C38BDF /* PieSliceDelegate.swift */; };
+		C30392062007439100C38BDF /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E52007439100C38BDF /* PieSliceLayer.swift */; };
+		C30392072007439100C38BDF /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E72007439100C38BDF /* CGPoint.swift */; };
+		C30392082007439100C38BDF /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E82007439100C38BDF /* CGRect.swift */; };
+		C30392092007439100C38BDF /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391E92007439100C38BDF /* CGSize.swift */; };
+		C303920A2007439100C38BDF /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391EA2007439100C38BDF /* FloatingPoint.swift */; };
+		C303920B2007439100C38BDF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391EB2007439100C38BDF /* Int.swift */; };
+		C303920C2007439100C38BDF /* PieChartLabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391EF2007439100C38BDF /* PieChartLabelSettings.swift */; };
+		C303920D2007439100C38BDF /* AlphaPieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391F22007439100C38BDF /* AlphaPieLineTextLayerAnimator.swift */; };
+		C303920E2007439100C38BDF /* PieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391F32007439100C38BDF /* PieLineTextLayerAnimator.swift */; };
+		C303920F2007439100C38BDF /* PieLineTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391F42007439100C38BDF /* PieLineTextLayer.swift */; };
+		C30392102007439100C38BDF /* PiePlainTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391F62007439100C38BDF /* PiePlainTextLayer.swift */; };
+		C30392112007439100C38BDF /* AlphaPieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391F92007439100C38BDF /* AlphaPieViewLayerAnimator.swift */; };
+		C30392122007439100C38BDF /* PieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391FA2007439100C38BDF /* PieViewLayerAnimator.swift */; };
+		C30392132007439100C38BDF /* PieCustomViewsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391FB2007439100C38BDF /* PieCustomViewsLayer.swift */; };
+		C30392142007439100C38BDF /* PieChartLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391FC2007439100C38BDF /* PieChartLayer.swift */; };
+		C30392152007439100C38BDF /* PieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391FE2007439100C38BDF /* PieSliceData.swift */; };
+		C30392162007439100C38BDF /* PieSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30391FF2007439100C38BDF /* PieSliceModel.swift */; };
+		C30392172007439100C38BDF /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30392012007439100C38BDF /* Globals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C30391CF2007436B00C38BDF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C30391D02007436B00C38BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30391D22007436B00C38BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C30391D42007436B00C38BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C30391D52007436B00C38BDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30391D62007436B00C38BDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30391E02007439100C38BDF /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		C30391E12007439100C38BDF /* PieChartDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartDelegate.swift; sourceTree = "<group>"; };
+		C30391E32007439100C38BDF /* PieSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		C30391E42007439100C38BDF /* PieSliceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceDelegate.swift; sourceTree = "<group>"; };
+		C30391E52007439100C38BDF /* PieSliceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceLayer.swift; sourceTree = "<group>"; };
+		C30391E72007439100C38BDF /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		C30391E82007439100C38BDF /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		C30391E92007439100C38BDF /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		C30391EA2007439100C38BDF /* FloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		C30391EB2007439100C38BDF /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		C30391EF2007439100C38BDF /* PieChartLabelSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartLabelSettings.swift; sourceTree = "<group>"; };
+		C30391F22007439100C38BDF /* AlphaPieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaPieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
+		C30391F32007439100C38BDF /* PieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
+		C30391F42007439100C38BDF /* PieLineTextLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieLineTextLayer.swift; sourceTree = "<group>"; };
+		C30391F62007439100C38BDF /* PiePlainTextLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiePlainTextLayer.swift; sourceTree = "<group>"; };
+		C30391F92007439100C38BDF /* AlphaPieViewLayerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaPieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		C30391FA2007439100C38BDF /* PieViewLayerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		C30391FB2007439100C38BDF /* PieCustomViewsLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieCustomViewsLayer.swift; sourceTree = "<group>"; };
+		C30391FC2007439100C38BDF /* PieChartLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartLayer.swift; sourceTree = "<group>"; };
+		C30391FE2007439100C38BDF /* PieSliceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceData.swift; sourceTree = "<group>"; };
+		C30391FF2007439100C38BDF /* PieSliceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceModel.swift; sourceTree = "<group>"; };
+		C30392012007439100C38BDF /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		C3FEA1B11FFF97FC003AD222 /* v2PieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = v2PieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3FEA1AE1FFF97FB003AD222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30391CE2007436B00C38BDF /* v2PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				C30391CF2007436B00C38BDF /* AppDelegate.swift */,
+				C30391D02007436B00C38BDF /* Assets.xcassets */,
+				C30391D12007436B00C38BDF /* LaunchScreen.storyboard */,
+				C30391D32007436B00C38BDF /* Main.storyboard */,
+				C30391D52007436B00C38BDF /* Info.plist */,
+				C30391D62007436B00C38BDF /* ViewController.swift */,
+			);
+			path = v2PieChart;
+			sourceTree = "<group>";
+		};
+		C30391DD2007439100C38BDF /* PieCharts */ = {
+			isa = PBXGroup;
+			children = (
+				C30391DE2007439100C38BDF /* Core */,
+				C30391E62007439100C38BDF /* Extensions */,
+				C30391EC2007439100C38BDF /* Layer */,
+				C30391FD2007439100C38BDF /* Model */,
+				C30392002007439100C38BDF /* Util */,
+			);
+			path = PieCharts;
+			sourceTree = "<group>";
+		};
+		C30391DE2007439100C38BDF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C30391DF2007439100C38BDF /* Chart */,
+				C30391E22007439100C38BDF /* Slice */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C30391DF2007439100C38BDF /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				C30391E02007439100C38BDF /* PieChart.swift */,
+				C30391E12007439100C38BDF /* PieChartDelegate.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		C30391E22007439100C38BDF /* Slice */ = {
+			isa = PBXGroup;
+			children = (
+				C30391E32007439100C38BDF /* PieSlice.swift */,
+				C30391E42007439100C38BDF /* PieSliceDelegate.swift */,
+				C30391E52007439100C38BDF /* PieSliceLayer.swift */,
+			);
+			path = Slice;
+			sourceTree = "<group>";
+		};
+		C30391E62007439100C38BDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C30391E72007439100C38BDF /* CGPoint.swift */,
+				C30391E82007439100C38BDF /* CGRect.swift */,
+				C30391E92007439100C38BDF /* CGSize.swift */,
+				C30391EA2007439100C38BDF /* FloatingPoint.swift */,
+				C30391EB2007439100C38BDF /* Int.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C30391EC2007439100C38BDF /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C30391ED2007439100C38BDF /* Impl */,
+				C30391FC2007439100C38BDF /* PieChartLayer.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		C30391ED2007439100C38BDF /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				C30391EE2007439100C38BDF /* Common */,
+				C30391F02007439100C38BDF /* LineText */,
+				C30391F52007439100C38BDF /* PlainText */,
+				C30391F72007439100C38BDF /* View */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		C30391EE2007439100C38BDF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C30391EF2007439100C38BDF /* PieChartLabelSettings.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C30391F02007439100C38BDF /* LineText */ = {
+			isa = PBXGroup;
+			children = (
+				C30391F12007439100C38BDF /* Anim */,
+				C30391F42007439100C38BDF /* PieLineTextLayer.swift */,
+			);
+			path = LineText;
+			sourceTree = "<group>";
+		};
+		C30391F12007439100C38BDF /* Anim */ = {
+			isa = PBXGroup;
+			children = (
+				C30391F22007439100C38BDF /* AlphaPieLineTextLayerAnimator.swift */,
+				C30391F32007439100C38BDF /* PieLineTextLayerAnimator.swift */,
+			);
+			path = Anim;
+			sourceTree = "<group>";
+		};
+		C30391F52007439100C38BDF /* PlainText */ = {
+			isa = PBXGroup;
+			children = (
+				C30391F62007439100C38BDF /* PiePlainTextLayer.swift */,
+			);
+			path = PlainText;
+			sourceTree = "<group>";
+		};
+		C30391F72007439100C38BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C30391F82007439100C38BDF /* Anim */,
+				C30391FB2007439100C38BDF /* PieCustomViewsLayer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C30391F82007439100C38BDF /* Anim */ = {
+			isa = PBXGroup;
+			children = (
+				C30391F92007439100C38BDF /* AlphaPieViewLayerAnimator.swift */,
+				C30391FA2007439100C38BDF /* PieViewLayerAnimator.swift */,
+			);
+			path = Anim;
+			sourceTree = "<group>";
+		};
+		C30391FD2007439100C38BDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C30391FE2007439100C38BDF /* PieSliceData.swift */,
+				C30391FF2007439100C38BDF /* PieSliceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C30392002007439100C38BDF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C30392012007439100C38BDF /* Globals.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C3FEA1A81FFF97FB003AD222 = {
+			isa = PBXGroup;
+			children = (
+				C30391DD2007439100C38BDF /* PieCharts */,
+				C30391CE2007436B00C38BDF /* v2PieChart */,
+				C3FEA1B21FFF97FC003AD222 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3FEA1B21FFF97FC003AD222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEA1B11FFF97FC003AD222 /* v2PieChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3FEA1B01FFF97FB003AD222 /* v2PieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FEA1C31FFF97FD003AD222 /* Build configuration list for PBXNativeTarget "v2PieChart" */;
+			buildPhases = (
+				C3FEA1AD1FFF97FB003AD222 /* Sources */,
+				C3FEA1AE1FFF97FB003AD222 /* Frameworks */,
+				C3FEA1AF1FFF97FB003AD222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = v2PieChart;
+			productName = v2PieChart;
+			productReference = C3FEA1B11FFF97FC003AD222 /* v2PieChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3FEA1A91FFF97FB003AD222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = v2soltions;
+				TargetAttributes = {
+					C3FEA1B01FFF97FB003AD222 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C3FEA1AC1FFF97FB003AD222 /* Build configuration list for PBXProject "v2PieChart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3FEA1A81FFF97FB003AD222;
+			productRefGroup = C3FEA1B21FFF97FC003AD222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3FEA1B01FFF97FB003AD222 /* v2PieChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3FEA1AF1FFF97FB003AD222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30391D82007436B00C38BDF /* Assets.xcassets in Resources */,
+				C30391DA2007436B00C38BDF /* Main.storyboard in Resources */,
+				C30391D92007436B00C38BDF /* LaunchScreen.storyboard in Resources */,
+				C30391DB2007436B00C38BDF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3FEA1AD1FFF97FB003AD222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30392132007439100C38BDF /* PieCustomViewsLayer.swift in Sources */,
+				C30392052007439100C38BDF /* PieSliceDelegate.swift in Sources */,
+				C30392062007439100C38BDF /* PieSliceLayer.swift in Sources */,
+				C303920A2007439100C38BDF /* FloatingPoint.swift in Sources */,
+				C30392142007439100C38BDF /* PieChartLayer.swift in Sources */,
+				C303920B2007439100C38BDF /* Int.swift in Sources */,
+				C30392092007439100C38BDF /* CGSize.swift in Sources */,
+				C30392152007439100C38BDF /* PieSliceData.swift in Sources */,
+				C303920E2007439100C38BDF /* PieLineTextLayerAnimator.swift in Sources */,
+				C30392102007439100C38BDF /* PiePlainTextLayer.swift in Sources */,
+				C30392032007439100C38BDF /* PieChartDelegate.swift in Sources */,
+				C303920C2007439100C38BDF /* PieChartLabelSettings.swift in Sources */,
+				C30392022007439100C38BDF /* PieChart.swift in Sources */,
+				C303920F2007439100C38BDF /* PieLineTextLayer.swift in Sources */,
+				C30392072007439100C38BDF /* CGPoint.swift in Sources */,
+				C30392122007439100C38BDF /* PieViewLayerAnimator.swift in Sources */,
+				C30392042007439100C38BDF /* PieSlice.swift in Sources */,
+				C30391D72007436B00C38BDF /* AppDelegate.swift in Sources */,
+				C30392162007439100C38BDF /* PieSliceModel.swift in Sources */,
+				C30392082007439100C38BDF /* CGRect.swift in Sources */,
+				C30392172007439100C38BDF /* Globals.swift in Sources */,
+				C30392112007439100C38BDF /* AlphaPieViewLayerAnimator.swift in Sources */,
+				C30391DC2007436B00C38BDF /* ViewController.swift in Sources */,
+				C303920D2007439100C38BDF /* AlphaPieLineTextLayerAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C30391D12007436B00C38BDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30391D22007436B00C38BDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C30391D32007436B00C38BDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30391D42007436B00C38BDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3FEA1C11FFF97FD003AD222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3FEA1C21FFF97FD003AD222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3FEA1C41FFF97FD003AD222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = v2PieChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.v2PieChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3FEA1C51FFF97FD003AD222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = v2PieChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.v2PieChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3FEA1AC1FFF97FB003AD222 /* Build configuration list for PBXProject "v2PieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FEA1C11FFF97FD003AD222 /* Debug */,
+				C3FEA1C21FFF97FD003AD222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FEA1C31FFF97FD003AD222 /* Build configuration list for PBXNativeTarget "v2PieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FEA1C41FFF97FD003AD222 /* Debug */,
+				C3FEA1C51FFF97FD003AD222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3FEA1A91FFF97FB003AD222 /* Project object */;
+}
